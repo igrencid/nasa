@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>My EXO Concert Memories</title>
+  <meta name="description" content="A modern responsive web album for EXO concert memories." />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="page-noise"></div>
+  <div class="aurora aurora-one"></div>
+  <div class="aurora aurora-two"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader-logo">EXO</div>
+    <div class="loader-line"><span></span></div>
+    <p>Opening memories...</p>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to home">
+      <span class="brand-mark">◇</span>
+      <span class="brand-text">EXO Memories</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#memories">Memories</a>
+      <a href="#videos">Media</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#playlist">Playlist</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="round-icon" id="themeToggle" aria-label="Change theme">☾</button>
+      <button class="round-icon menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <aside class="side-menu" id="sideMenu">
+    <div class="side-menu-head">
+      <strong>EXO Memories</strong>
+      <button id="closeMenu">×</button>
+    </div>
+    <a href="#home">Home</a>
+    <a href="#memories">Memories</a>
+    <a href="#videos">Media</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#playlist">Playlist</a>
+  </aside>
+
+  <main>
+    <section class="hero section" id="home">
+      <video class="hero-bg-video" autoplay muted loop playsinline>
+        <source src="assets/videos/opening.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-bg"></div>
+
+      <div class="hero-layout">
+        <div class="hero-copy reveal">
+          <p class="kicker" id="heroKicker">MY EXO CONCERT ALBUM</p>
+          <h1 id="heroTitle">A Night to Remember with <span>EXO</span></h1>
+          <p class="hero-description" id="heroSubtitle">
+            A digital album of my favorite moments from the night I watched EXO live
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#memories" class="btn primary">View Memories</a>
+            <a href="#videos" class="btn secondary">Watch Videos</a>
+          </div>
+
+          <div class="stats-panel" id="statsPanel"></div>
+        </div>
+
+        <div class="hero-showcase reveal">
+          <div class="desktop-frame">
+            <div class="frame-toolbar">
+              <span></span><span></span><span></span>
+              <p>Concert Memory Dashboard</p>
+            </div>
+
+            <div class="frame-content">
+              <div class="spotlight-card">
+                <img id="spotlightImg" src="assets/images/hero-memory.jpg" alt="EXO concert memory">
+                <div>
+                  <small>Featured Memory</small>
+                  <h3 id="spotlightTitle">EXO Concert Night</h3>
+                </div>
+              </div>
+
+              <div class="mini-dashboard">
+                <div>
+                  <span>Photos</span>
+                  <b>24+</b>
+                </div>
+                <div>
+                  <span>Stories</span>
+                  <b>06</b>
+                </div>
+                <div>
+                  <span>Best Night</span>
+                  <b>01</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-ticket">
+            <small>Digital Ticket</small>
+            <strong id="ticketTitle">EXO PLANET</strong>
+            <span id="ticketDate">Live Memory</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-heading reveal">
+        <p class="kicker">PERSONAL MEMORY ALBUM</p>
+        <h2>Concert Memories</h2>
+        <p>Every moment, forever with EXO. Klik foto untuk lihat detail kenangannya</p>
+      </div>
+
+      <div class="filter-row reveal" id="filterRow">
+        <button class="filter-chip active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="before">Before Show</button>
+        <button class="filter-chip" data-filter="concert">Concert</button>
+        <button class="filter-chip" data-filter="after">After Show</button>
+      </div>
+
+      <div class="memory-layout">
+        <article class="featured-memory reveal" id="featuredMemory"></article>
+        <div class="memory-list" id="memoryList"></div>
+      </div>
+    </section>
+
+    <section class="section media-section" id="videos">
+      <div class="section-heading reveal">
+        <p class="kicker">MEDIA ALBUM</p>
+        <h2>Video Highlights</h2>
+        <p>Simpan short clip konser, fan edit pribadi, atau gunakan embed video resmi</p>
+      </div>
+
+      <div class="media-layout">
+        <div class="media-player-card reveal">
+          <div class="video-wrap">
+            <video id="mainVideo" controls playsinline poster="assets/images/video-cover.jpg">
+              <source src="assets/videos/concert-highlight.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="media-player-info">
+            <span>Highlight Video</span>
+            <h3 id="mainVideoTitle">Best Night Recap</h3>
+            <p id="mainVideoDesc">Video recap utama dari malam terbaik pas nonton EXO</p>
+          </div>
+        </div>
+
+        <div class="media-list" id="mediaList"></div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-heading reveal">
+        <p class="kicker">MY CONCERT JOURNEY</p>
+        <h2>Timeline</h2>
+        <p>Perjalanan dari beli tiket sampai semua kenangan dijadiin album digital</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+        <div class="timeline-list" id="timelineList"></div>
+      </div>
+    </section>
+
+    <section class="section playlist-section" id="playlist">
+      <div class="section-heading reveal">
+        <p class="kicker">ALBUM MOOD</p>
+        <h2>Playlist & Notes</h2>
+        <p>Kumpulan lagu yang cocok buat nemenin album kenangan gua pas nonton EXO</p>
+      </div>
+
+      <div class="playlist-grid">
+        <article class="album-player reveal">
+          <img id="albumCover" src="assets/images/album-cover.jpg" alt="Album cover">
+
+          <div class="album-text">
+            <span>Now Playing</span>
+            <h3 id="songTitle">Crown</h3>
+            <p id="songArtist">EXO • Concert Memory Mood</p>
+
+            <div class="progress-bar">
+              <span id="progressBar"></span>
+            </div>
+
+            <div class="player-controls">
+              <button id="prevTrack" type="button">⏮</button>
+              <button id="mainPlay" type="button">▶</button>
+              <button id="nextTrack" type="button">⏭</button>
+            </div>
+
+            <div class="current-track-meta">
+              <small id="currentTrackNumber">Track 01</small>
+              <small id="currentTrackDuration">03:20</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="track-queue reveal">
+          <div class="queue-head">
+            <span>EXO Playlist</span>
+            <strong id="queueCount">8 Tracks</strong>
+          </div>
+
+          <div class="queue-list" id="trackQueue"></div>
+        </article>
+
+        <article class="note-card reveal">
+          <span>Personal Note</span>
+          <h3 id="personalNoteTitle">Forever in My EXO Memories</h3>
+          <p id="personalNote">
+            Malam itu bukan cuma konser, tapi salah satu kenangan terbaik yang bakal gua simpan terus
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="#home" class="active"><span>⌂</span>Home</a>
+    <a href="#memories"><span>▧</span>Memories</a>
+    <a href="#videos"><span>▷</span>Media</a>
+    <a href="#timeline"><span>◌</span>Timeline</a>
+  </nav>
+
+  <div class="mini-player" id="miniPlayer">
+    <img src="assets/images/album-cover.jpg" alt="Music cover">
+    <div>
+      <strong id="miniSong">Crown</strong>
+      <p id="miniArtist">EXO</p>
+    </div>
+    <button id="miniPlay" type="button">▶</button>
+    <audio id="audio" src="assets/music/1.mp3"></audio>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose">×</button>
+
+    <div class="lightbox-panel">
+      <img id="lightboxImg" src="" alt="">
+      <div class="lightbox-info">
+        <span id="lightboxCategory"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+        <div class="lightbox-meta">
+          <small id="lightboxDate"></small>
+          <small id="lightboxLocation"></small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
