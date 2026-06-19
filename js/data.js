@@ -23,16 +23,16 @@ const SITE_DATA = {
       date: "May 27, 2024",
       location: "Concert Venue",
       image: "assets/images/memory-1.jpg",
-      desc: "Perjalanan penuh semangat menuju malam yang tak terlupakan. Semua rasa excited mulai kerasa dari sini."
+      desc: "Perjalanan penuh semangat menuju malam yang tak terlupakan. Semua rasa excited mulai kerasa dari sini"
     },
     {
-      title: "Ticket & Lightstick",
+      title: "A BEAUTIFUL ERIBONG",
       category: "before",
       categoryLabel: "Before Show",
       date: "May 27, 2024",
       location: "Entrance Gate",
       image: "assets/images/memory-2.jpg",
-      desc: "Foto tiket, lightstick, dan detail kecil sebelum masuk venue. Simple, tapi jadi bagian penting dari kenangan."
+      desc: "finally I can see how beautiful the sea of colorful lights of eribong is on exo planet with uri peterpan"
     },
     {
       title: "Lautan Lightstick",
@@ -41,7 +41,7 @@ const SITE_DATA = {
       date: "May 27, 2024",
       location: "Main Stage",
       image: "assets/images/memory-3.jpg",
-      desc: "Silver ocean yang indah. Energi EXO-L terasa banget saat semua lightstick menyala bersama."
+      desc: "Silver ocean yang indah. Energi EXO-L terasa banget saat semua lightstick menyala bersama"
     },
     {
       title: "Favorite Stage",
@@ -50,7 +50,7 @@ const SITE_DATA = {
       date: "May 27, 2024",
       location: "Main Stage",
       image: "assets/images/memory-4.jpg",
-      desc: "Setiap lagu, setiap gerakan, semua terekam di hati. Ini salah satu part paling pecah selama konser."
+      desc: "Setiap lagu, setiap gerakan, semua terekam di hati. Ini salah satu part paling pecah selama konser"
     },
     {
       title: "Ending yang Tak Terlupakan",
@@ -59,7 +59,7 @@ const SITE_DATA = {
       date: "May 27, 2024",
       location: "Encore Stage",
       image: "assets/images/memory-5.jpg",
-      desc: "Bagian ending yang bikin campur aduk. Senang, haru, dan masih pengen waktunya lebih lama."
+      desc: "Bagian ending yang bikin campur aduk. Senang, haru, dan masih pengen waktunya lebih lama"
     },
     {
       title: "After Concert Recap",
@@ -68,28 +68,28 @@ const SITE_DATA = {
       date: "May 28, 2024",
       location: "After Show",
       image: "assets/images/memory-6.jpg",
-      desc: "Capek tapi bahagia. Semua foto dan video dikumpulin supaya malam ini bisa terus dikenang."
+      desc: "Capek tapi bahagia. Semua foto dan video dikumpulin supaya malam ini bisa terus dikenang"
     }
   ],
 
   videos: [
     {
       title: "Best Night Recap",
-      desc: "Video recap utama dari malam terbaik pas nonton EXO.",
+      desc: "Video recap utama dari malam terbaik pas nonton EXO",
       duration: "02:45",
       poster: "assets/images/video-cover.jpg",
       src: "assets/videos/concert-highlight.mp4"
     },
     {
       title: "Opening Moment",
-      desc: "Momen awal konser dimulai.",
+      desc: "Momen awal konser dimulai",
       duration: "00:35",
       poster: "assets/images/video-1.jpg",
       src: "assets/videos/opening-moment.mp4"
     },
     {
       title: "Favorite Song",
-      desc: "Bagian lagu favorit yang paling berkesan.",
+      desc: "Bagian lagu favorit yang paling berkesan",
       duration: "01:12",
       poster: "assets/images/video-2.jpg",
       src: "assets/videos/favorite-song.mp4"
@@ -108,25 +108,25 @@ const SITE_DATA = {
       number: "01",
       title: "Bought Ticket",
       date: "Apr 10, 2024",
-      desc: "Akhirnya dapat tiket. Deg-degan tapi senang karena satu langkah lagi menuju EXO."
+      desc: "Akhirnya dapat tiket. Deg-degan tapi senang karena satu langkah lagi menuju EXO"
     },
     {
       number: "02",
       title: "Prepare Everything",
       date: "May 20, 2024",
-      desc: "Mulai siapin outfit, lightstick, kamera, dan semua hal kecil buat hari konser."
+      desc: "Mulai siapin outfit, lightstick, kamera, dan semua hal kecil buat hari konser"
     },
     {
       number: "03",
       title: "Concert Day",
       date: "May 27, 2024",
-      desc: "Hari yang ditunggu akhirnya datang. The day I will never forget."
+      desc: "Hari yang ditunggu akhirnya datang. The day I will never forget"
     },
     {
       number: "04",
       title: "After Movie",
       date: "May 28, 2024",
-      desc: "Semua momen dikumpulin jadi album digital supaya bisa dibuka kapan saja."
+      desc: "Semua momen dikumpulin jadi album digital supaya bisa dibuka kapan saja"
     }
   ],
 
@@ -134,7 +134,7 @@ const SITE_DATA = {
     cover: "assets/images/album-cover.jpg",
 
     noteTitle: "Forever in My EXO Memories",
-    note: "Malam itu bukan cuma konser, tapi salah satu kenangan terbaik yang bakal gua simpan terus.",
+    note: "Malam itu bukan cuma konser, tapi salah satu kenangan terbaik yang bakal gua simpan terus",
 
     tracks: [
       {
